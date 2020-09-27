@@ -1,0 +1,56 @@
+
+
+.goTable tr{
+	padding:0;
+}
+
+th {
+	padding-left:8px;
+	padding-right:8px;
+	cursor:pointer;
+}
+th.sortable::after {
+  content: "\21C5";
+  white-space: nowrap;
+  right: 8px;
+  color: #999;
+}
+
+th.sortable.asc::after {
+  content: "\25b2";
+}
+
+th.sortable.desc::after {
+  content: "\25bc";
+}
+
+.goTable td{
+	margin: 0px;
+	margin-top:1px;
+	border-bottom:1px solid #ccc;
+	border-left: 1px solid #ccc;
+	padding: 10px;
+
+}
+
+.goId {
+	font-family:monospace;
+}
+.goState{
+	text-align: right;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.goTime{
+	text-align: right;
+}
+.goCount {
+	text-align: right;
+}
+
+.goStack{
+	text-align:left;
+	font-family:monospace;
+	padding-left:15px;
+}

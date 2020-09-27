@@ -1,0 +1,99 @@
+.App {
+  width: 100%;
+  height: 100%;
+}
+
+.dropTarget {
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  align-items: center;
+  min-height: 400px;
+  border: 3px dashed #888;
+  margin:25px;
+  font-size: 3em;
+}
+.dropTargetCopy {
+  display: block;
+  padding:10px;
+}
+.disclaimer{
+  text-align: center;
+  line-height:2em;
+}
+.disclaimer img {
+	vertical-align:middle;
+}
+
+.loading-wrapper {
+	margin-top:30px;
+  width: 200px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8em;
+}
+.loading {
+  font-style: italic;
+}
+.loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+  animation: ellipsis steps(4, end) 900ms infinite;
+  content: '\2026'; /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 20px;
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 20px;
+  }
+}
+
+.expand {
+	cursor:pointer;
+	padding:5px;
+}
+
+code {
+  white-space: pre-wrap;
+  line-height: 1.8em;
+}
+
+.link-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size:1em;
+  text-decoration: underline;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.link-button:hover,
+.link-button:focus {
+text-decoration: none;
+}
+
+.substringMatch{
+	font-family: monospace;
+	min-width: 300px;
+}
+
+.filter{
+	padding:20px;
+}
+.filterGroup{
+	margin:25px;
+	display:flex;
+	flex-direction:row;
+	padding:10px;
+}
